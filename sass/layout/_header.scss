@@ -1,0 +1,19 @@
+header.menu{
+    @include flex-between;
+    background-color: #fff;
+    border-bottom: 3px solid #000000;
+    height: 80px;
+    &-logo{
+        @include flex-center;
+        flex-direction: row;
+        height: 80px;
+        width: 80px;
+    }
+    &-nav{
+        border-bottom: 3px solid #000000;
+        @include flex-around;
+    }
+    &-links{
+        font-size: 5em;
+    }
+}
