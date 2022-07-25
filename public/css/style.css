@@ -1,7 +1,15 @@
 /* Utils */
 /* Layout */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-header.menu {
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 3px solid #000000;
+  font-weight: 400;
+}
+
+.menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,29 +17,57 @@ header.menu {
   border-bottom: 3px solid #000000;
   height: 80px;
 }
-header.menu-logo {
+.menu-logo {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  height: 80px;
-  width: 80px;
 }
-header.menu-nav {
-  border-bottom: 3px solid #000000;
+.menu-logo__img {
+  filter: brightness(0);
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+}
+.menu-nav {
+  width: 500px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-header.menu-links {
-  font-size: 5em;
+.menu-nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  color: black;
+  border-bottom: 3px solid rgba(0, 0, 0, 0);
+  width: 100px;
+}
+.menu-nav a:visited {
+  color: black;
+}
+.menu-nav a:hover {
+  transition: all 0.3s ease-in-out;
+  border-bottom: 3px solid #000000;
+  border-radius: 5px;
+}
+.menu-links {
+  margin: 10px;
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-links i {
+  color: black;
+  font-size: 3em;
 }
 
 /* Base */
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
 }
 
 @font-face {
@@ -50,5 +86,42 @@ p, a {
 
 /* Components */
 /* Pages */
+.block__1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  height: 500px;
+  width: 400px;
+}
+.card img {
+  width: 300px;
+}
+.card h1 {
+  color: white;
+  margin-top: 30px;
+  font-size: 1.75em;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.about-text {
+  width: 450px;
+  color: black;
+  font-size: 1.25em;
+  margin-top: 30px;
+}
 
 /*# sourceMappingURL=style.css.map */

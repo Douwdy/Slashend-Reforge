@@ -1,0 +1,33 @@
+.block{
+    &__1{
+        @include flex-between;
+        flex-direction: row;
+    }
+}
+
+.card{
+    @include flex-center;
+    flex-direction: column;
+    background-color: black;
+    height: 500px;
+    width: 400px;
+    img{
+        width: 300px;
+    }
+    h1{
+        color: white;
+        margin-top: 30px;
+        font-size: 1.75em;
+    }
+}
+
+.about{
+    @include flex-center;
+    width: 80%;
+    &-text{
+        width: 450px;
+        color: black;
+        font-size: 1.25em;
+        margin-top: 30px;
+    }
+}
