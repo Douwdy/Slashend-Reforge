@@ -13,8 +13,8 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
-  border-bottom: 3px solid #000000;
+  background-color: #ffffff;
+  border-bottom: 3px solid rgb(51, 51, 51);
   height: 80px;
 }
 .menu-logo {
@@ -39,13 +39,14 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 800;
   padding: 5px;
-  color: black;
+  color: #000000;
   border-bottom: 3px solid rgba(0, 0, 0, 0);
   width: 100px;
 }
 .menu-nav a:visited {
-  color: black;
+  color: #000000;
 }
 .menu-nav a:hover {
   transition: all 0.3s ease-in-out;
@@ -60,7 +61,7 @@ footer {
   align-items: center;
 }
 .menu-links i {
-  color: black;
+  color: #000000;
   font-size: 3em;
 }
 
@@ -68,6 +69,12 @@ footer {
 body {
   margin: 0;
   padding: 0;
+}
+
+.dark-mode {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  filter: brightness(1);
 }
 
 @font-face {
@@ -92,13 +99,34 @@ p, a {
   align-items: center;
   flex-direction: row;
 }
+.block__2 {
+  border-top: solid 3px rgb(51, 51, 51);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.block__3 {
+  border-top: solid 3px rgb(51, 51, 51);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.block__4 {
+  border-top: solid 3px rgb(51, 51, 51);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
 
 .card {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: black;
+  background-color: #000000;
   height: 500px;
   width: 400px;
 }
@@ -106,9 +134,23 @@ p, a {
   width: 300px;
 }
 .card h1 {
-  color: white;
+  color: #ffffff;
   margin-top: 30px;
   font-size: 1.75em;
+}
+.card-framework {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000000;
+  color: #ffffff;
+  height: 600px;
+  width: 600px;
+  font-size: 10em;
+}
+.card-framework__title {
+  font-size: 0.4em;
 }
 
 .about {
@@ -119,7 +161,7 @@ p, a {
 }
 .about-text {
   width: 450px;
-  color: black;
+  color: #000000;
   font-size: 1.25em;
   margin-top: 30px;
 }

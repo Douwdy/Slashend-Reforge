@@ -3,21 +3,42 @@
         @include flex-between;
         flex-direction: row;
     }
+    &__2{
+        @include box-index;
+    }
+    &__3{
+        @include box-index;
+    }
+    &__4{
+        @include box-index;
+    }
 }
 
 .card{
     @include flex-center;
     flex-direction: column;
-    background-color: black;
+    background-color: $color-black;
     height: 500px;
     width: 400px;
     img{
         width: 300px;
     }
     h1{
-        color: white;
+        color: $color-white;
         margin-top: 30px;
         font-size: 1.75em;
+    }
+    &-framework{
+        @include flex-center;
+        flex-direction: column;
+        background-color: $color-black;
+        color: $color-white;
+        height: 600px;
+        width: 600px;
+        font-size: 10em;
+        &__title{
+            font-size: 0.4em;
+        }
     }
 }
 
@@ -26,7 +47,7 @@
     width: 80%;
     &-text{
         width: 450px;
-        color: black;
+        color: $color-black;
         font-size: 1.25em;
         margin-top: 30px;
     }

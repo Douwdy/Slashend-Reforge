@@ -2,3 +2,9 @@ body{
     margin: 0;
     padding: 0;
 }
+
+.dark-mode{
+    background-color: $color-darkmode;
+    color: white;
+    filter: brightness(1)
+}

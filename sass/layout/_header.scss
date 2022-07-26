@@ -1,7 +1,7 @@
 .menu{
     @include flex-between;
-    background-color: #fff;
-    border-bottom: 3px solid #000000;
+    background-color: $color-white;
+    border-bottom: 3px solid $color-darkmode;
     height: 80px;
     &-logo{
         @include flex-center;
@@ -18,16 +18,17 @@
         @include flex-around;
         a{
             @include flex-center;
+            font-weight: 800;
             padding: 5px;
-            color: black;
-            border-bottom: 3px solid rgba($color: #000000, $alpha: 0);
+            color: $color-black;
+            border-bottom: 3px solid rgba($color: $color-black, $alpha: 0);
             width: 100px;
             &:visited{
-                color: black;
+                color: $color-black;
             }
             &:hover{
                 transition: all 0.3s ease-in-out;
-                border-bottom: 3px solid #000000;
+                border-bottom: 3px solid $color-black;
                 border-radius: 5px;
             }
         }
@@ -37,7 +38,7 @@
         width: 100px;
         @include flex-between;
         i{
-            color: black;
+            color: $color-black;
             font-size: 3em;
         }
     }
