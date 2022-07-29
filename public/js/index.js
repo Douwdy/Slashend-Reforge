@@ -1,3 +1,16 @@
+// Hamburger menu
+
+    function burgerMenu() {
+        var x = document.getElementById("myLinks");
+        if (x.style.opacity === "1") {
+        x.style.opacity = "0";
+        x.style.transform = "translateX(-100%)";
+        } else {
+        x.style.opacity = "1";
+        x.style.transform = "translateX(0%)";
+        }
+    }
+
 // Framework Title Animation
 
     // Selectors

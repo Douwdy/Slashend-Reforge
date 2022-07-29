@@ -1,62 +1,131 @@
-.block{
-    &__1{
-        @include flex-between;
-        flex-direction: row;
+// Desktop
+@media screen and (min-width: 768px) {
+    .block{
+        &__1{
+            @include flex-between;
+            flex-direction: row;
+        }
+        &__2{
+            @include box-index;
+        }
+        &__3{
+            @include box-index;
+        }
+        &__4{
+            @include box-index;
+        }
     }
-    &__2{
-        @include box-index;
-    }
-    &__3{
-        @include box-index;
-    }
-    &__4{
-        @include box-index;
-    }
-}
-
-.card{
-    @include flex-center;
-    flex-direction: column;
-    background-color: $color-black;
-    height: 500px;
-    width: 400px;
-    img{
-        border-radius: 5px;
-        width: 300px;
-    }
-    h1{
-        color: $color-white;
-        margin-top: 30px;
-        font-size: 1.75em;
-    }
-    &-framework{
+    
+    .card{
         @include flex-center;
         flex-direction: column;
         background-color: $color-black;
-        color: $color-white;
-        height: 600px;
-        width: 600px;
-        font-size: 10em;
-        &-title{
-            height: 0.4em;
-            overflow: hidden;
-            display: flex;
-            justify-content: flex-end;
-            &__text{
-                display: block;
-                font-size: 0.4em;
+        height: 500px;
+        width: 400px;
+        img{
+            border-radius: 5px;
+            width: 300px;
+        }
+        h1{
+            color: $color-white;
+            margin-top: 30px;
+            font-size: 1.75em;
+        }
+        &-framework{
+            @include flex-center;
+            flex-direction: column;
+            background-color: $color-black;
+            color: $color-white;
+            height: 600px;
+            width: 600px;
+            font-size: 10em;
+            &-title{
+                height: 0.4em;
+                overflow: hidden;
+                display: flex;
+                justify-content: flex-end;
+                &__text{
+                    display: block;
+                    font-size: 0.4em;
+                }
             }
+        }
+    }
+    
+    .about{
+        @include flex-center;
+        width: 80%;
+        &-text{
+            width: 450px;
+            color: $color-black;
+            font-size: 1.25em;
+            margin-top: 30px;
         }
     }
 }
 
-.about{
-    @include flex-center;
-    width: 80%;
-    &-text{
-        width: 450px;
-        color: $color-black;
-        font-size: 1.25em;
-        margin-top: 30px;
+// Mobile
+@media screen and (max-width: 768px) {
+    .block{
+        &__1{
+            @include flex-center;
+            flex-direction: column;
+        }
+        &__2{
+            @include box-index-mobile__reverse;
+        }
+        &__3{
+            @include box-index-mobile;
+        }
+        &__4{
+            @include box-index-mobile__reverse;
+        }
+    }
+
+    .card{
+        @include flex-center;
+        flex-direction: column;
+        background-color: $color-black;
+        height: 500px;
+        width: 100vw;
+        img{
+            border-radius: 5px;
+            width: 300px;
+        }
+        h1{
+            color: $color-white;
+            margin-top: 30px;
+            font-size: 1.75em;
+        }
+        &-framework{
+            @include flex-center;
+            flex-direction: column;
+            background-color: $color-black;
+            color: $color-white;
+            height: 300px;
+            width: 600px;
+            font-size: 10em;
+            &-title{
+                height: 0.4em;
+                overflow: hidden;
+                display: flex;
+                justify-content: flex-end;
+                &__text{
+                    display: block;
+                    font-size: 0.4em;
+                }
+            }
+        }
+    }
+
+    .about{
+        @include flex-center;
+        width: 80%;
+        &-text{
+            width: 450px;
+            color: $color-black;
+            font-size: 1.25em;
+            margin-top: 30px;
+        }
     }
 }

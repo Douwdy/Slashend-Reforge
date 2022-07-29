@@ -27,3 +27,15 @@
   @include flex-center;
   flex-direction: row;
 }
+
+@mixin box-index-mobile{
+  border-top: solid 3px $color-darkmode;
+  @include flex-center;
+  flex-direction: column;
+}
+
+@mixin box-index-mobile__reverse{
+  border-top: solid 3px $color-darkmode;
+  @include flex-center;
+  flex-direction: column-reverse;
+}
