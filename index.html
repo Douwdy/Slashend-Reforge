@@ -5,25 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="./public/css/locomotive-scroll.css">
     <script src="https://kit.fontawesome.com/0aa7525883.js" crossorigin="anonymous" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.3.4/lib/darkmode-js.min.js" defer></script>
-    <script src="./public/js/dark-mode.js" defer></script>
-    <title>Portfolio</title>
+    <!-- <script src="locomotive-scroll.min.js" defer></script> -->
+    <script src="./public/js/index.js" defer></script>
+    <title>SlashEnd - Accueil</title>
 </head>
 <header class="menu">
   <div class="menu-logo">
     <img class="menu-logo__img" src="./public/img/Slashend-logo.svg" alt="Logo SlashEnd">
   </div>
   <div class="menu-nav">
-    <a href="index.html">Accueil</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="contact.html">Contact</a>
+    <a href="index.html" title="Vers l'Accueil">Accueil</a>
+    <a href="portfolio.html" title="Vers le Portfolio">Portfolio</a>
+    <a href="mailto:guillaumelamarque7@gmail.com" title="Envoyer un mail à guillaumelamarque7@gmail.com">Contact</a>
   </div>
   <div class="menu-links">
-    <a href="https://www.linkedin.com/in/guillaume-lamarque-00a888231/">
+    <a href="https://twitter.com/DouwdSlash" aria-label="Lien vers le Twitter de Guillaume" title="Lien vers le Twitter de Guillaume">
+      <i class="fa-brands fa-twitter"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/guillaume-lamarque-00a888231/" aria-label="Lien vers le LinkedIn de Guillaume" title="Lien vers le LinkedIn de Guillaume">
       <i class="fa-brands fa-linkedin"></i>
     </a>
-    <a href="https://github.com/Douwdy">
+    <a href="https://github.com/Douwdy" aria-label="Lien vers le GitHub de Guillaume" title="Lien vers le GitHub de Guillaume">
       <i class="fa-brands fa-github"></i>
     </a>
   </div>
@@ -48,34 +52,44 @@
   <align class="block__2">
     <div class="about">
       <p class="about-text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas nobis nemo consectetur reiciendis, id, necessitatibus laudantium quod quaerat sequi harum, totam ad. Odit, repellat quod itaque nam vel asperiores.
+        React est le premier framework que j'ai appris pour la mise en forme du front-end autrement qu'avec le JavaScript Vanilla.
+        <br> Au cours de mon apprentissage, j'ai pu apprendre à utiliser les différents composants de React, comme les components, les props, les state, les hooks, les context, les lifecycle, etc.
       </p>
     </div>
     <div class="card-framework">
-      <i class="fa-brands fa-react"></i>
-      <h2 class="card-framework__title">React</h2>
+      <i class="fa-brands fa-react" id="react-icon"></i>
+      <div class="card-framework-title">
+        <h2 class="card-framework-title__text" id="react">React</h2>
+      </div>
     </div>
   </align>
   <align class="block__3">
     <div class="card-framework">
-      <i class="fa-brands fa-node-js"></i>
-      <h2 class="card-framework__title">NodeJS</h2>
+      <i class="fa-brands fa-node-js" id="node-icon"></i>
+      <div class="card-framework-title">
+        <h2 class="card-framework-title__text" id="nodejs">NodeJS</h2>
+      </div>
     </div>
     <div class="about">
       <p class="about-text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit iure numquam delectus consequatur sint quibusdam quis ab accusantium repellat amet accusamus doloremque voluptatem assumenda, tempore rerum unde id provident! Voluptas.
+        NodeJS est un framework que j'ai appris a utiliser pour le développement d'API REST.
+        <br>Notament j'ai appris à utiliser les différents modules de NodeJS, comme les modules de gestion de base de données, les modules de gestion de fichiers, etc.
       </p>
     </div>
   </align>
   <align class="block__4">
     <div class="about">
       <p class="about-text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, repellat commodi nihil nisi eum, ipsa incidunt ducimus accusamus natus vitae labore porro veritatis excepturi quisquam illo magni amet quasi tenetur.
+        Sass a été un grand changement dans ma manière de faire du CSS, pour moi cela a été une révolution.
+        <br>J'ai pu apprendre à utiliser les mixins, les variables, les functions, les selectors, etc.
+        <br>Le tout pour avoir un CSS plus simple, plus pratique et plus maintenable.
       </p>
     </div>
     <div class="card-framework">
-      <i class="fa-brands fa-sass"></i>
-      <h2 class="card-framework__title">Sass</h2>
+      <i class="fa-brands fa-sass" id="sass-icon"></i>
+      <div class="card-framework-title">
+        <h2 class="card-framework-title__text text-transform" id="sass">Sass</h2>
+      </div>
     </div>
   </align>
 </body>
@@ -84,4 +98,10 @@
     Copyright 2022 SlashEnd - All rights reserved
   </p>
 </footer>
+<!-- <script>
+  const scroll = new LocomotiveScroll({
+      el: document.querySelector('[data-scroll-container]'),
+      smooth: true
+  });
+</script> -->
 </html>

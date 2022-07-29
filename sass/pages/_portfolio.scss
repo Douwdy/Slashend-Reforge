@@ -1,0 +1,60 @@
+.portfolio{
+    @include flex-center;
+    flex-direction: row;
+    height: 85vh;
+    &-link{
+        @include flex-center;
+        color: black;
+        flex-direction: column;
+        margin: 5px;
+        &-title{
+            @include flex-center;
+            height: 250px;
+            width: 50px;
+            font-size: 1.5rem;
+            margin-top: 0px;
+            opacity: 0;
+            transform: translateY(-75px);
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        &-img{
+            position: absolute;
+            height: 250px;
+            width: 50px;
+            object-fit: cover;
+            transition: height 0.3s ease-in-out;
+        }
+        &-tech{
+            @include flex-center;
+            flex-direction: column;
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            &__icon{
+                margin-top: 5px;
+                @include flex-center;
+                font-size: 1.5em;
+                color: white;
+                background-color: black;
+                border-radius: 50%;
+                height: 45px;
+                width: 45px;
+                transform: translateY(-55px);
+            }
+        }
+
+        &:hover &-img{
+            transition: height 0.3s ease-in-out;
+            height: 270px;
+        }
+
+        &:hover &-tech{
+            transition: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            transform: translateY(115px);
+        }
+
+        &:hover &-title{
+            transition: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            transform: translateY(-100px);
+            opacity: 1;
+        }
+    }
+}

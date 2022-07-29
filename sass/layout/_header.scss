@@ -35,11 +35,16 @@
     }
     &-links{
         margin: 10px;
-        width: 100px;
+        width: 180px;
         @include flex-between;
         i{
             color: $color-black;
             font-size: 3em;
+            transition: color 0.3s cubic-bezier(.69,.1,.43,.71);
+            &:hover{
+                transition: cubic-bezier(.69,.1,.43,.71) 0.3s;
+                color: $color-social-hover;
+            }
         }
     }
 }

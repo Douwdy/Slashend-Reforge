@@ -21,6 +21,7 @@
     height: 500px;
     width: 400px;
     img{
+        border-radius: 5px;
         width: 300px;
     }
     h1{
@@ -36,8 +37,15 @@
         height: 600px;
         width: 600px;
         font-size: 10em;
-        &__title{
-            font-size: 0.4em;
+        &-title{
+            height: 0.4em;
+            overflow: hidden;
+            display: flex;
+            justify-content: flex-end;
+            &__text{
+                display: block;
+                font-size: 0.4em;
+            }
         }
     }
 }
