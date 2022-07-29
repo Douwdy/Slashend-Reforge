@@ -1,5 +1,5 @@
 // Desktop
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
     .block{
         &__1{
             @include flex-between;
@@ -65,7 +65,7 @@
 }
 
 // Mobile
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     .block{
         &__1{
             @include flex-center;
@@ -103,7 +103,7 @@
             background-color: $color-black;
             color: $color-white;
             height: 300px;
-            width: 600px;
+            width: 100vw;
             font-size: 10em;
             &-title{
                 height: 0.4em;

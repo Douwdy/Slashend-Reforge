@@ -159,7 +159,7 @@ body {
 
 @font-face {
   font-family: "GT-Super";
-  src: url(./public/fonts/GT-Super-Display-Super.woff2);
+  src: url(/public/fonts/GT-Super-Display-Super.woff2);
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -173,7 +173,7 @@ p, a {
 
 /* Components */
 /* Pages */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   .block__1 {
     display: flex;
     justify-content: space-between;
@@ -253,7 +253,7 @@ p, a {
     margin-top: 30px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .block__1 {
     display: flex;
     justify-content: center;
@@ -307,7 +307,7 @@ p, a {
     background-color: #000000;
     color: #ffffff;
     height: 300px;
-    width: 600px;
+    width: 100vw;
     font-size: 10em;
   }
   .card-framework-title {
