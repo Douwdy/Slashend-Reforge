@@ -1,13 +1,13 @@
 // Hamburger menu
 
     function burgerMenu() {
-        var x = document.getElementById("myLinks");
-        if (x.style.opacity === "1") {
-        x.style.opacity = "0";
-        x.style.transform = "translateX(-100%)";
+        let menu = document.getElementById("myLinks");
+        if (menu.classList.contains("active") === true) {
+        menu.classList.remove("active");
+        menu.classList.add("inactive");
         } else {
-        x.style.opacity = "1";
-        x.style.transform = "translateX(0%)";
+        menu.classList.remove("inactive");
+        menu.classList.add("active");
         }
     }
 
