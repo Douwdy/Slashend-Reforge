@@ -21,7 +21,7 @@
         flex-direction: column;
         background-color: $color-black;
         height: 500px;
-        width: 400px;
+        width: 500px;
         img{
             border-radius: 5px;
             width: 300px;
@@ -30,6 +30,9 @@
             color: $color-white;
             margin-top: 30px;
             font-size: 1.75em;
+        }
+        &-illustration{
+            display: none
         }
         &-framework{
             @include flex-center;
@@ -48,6 +51,9 @@
                     display: block;
                     font-size: 0.4em;
                 }
+            }
+            &-illustration{
+                display: none
             }
         }
     }
@@ -97,6 +103,9 @@
             margin-top: 30px;
             font-size: 1.75em;
         }
+        &-illustration{
+            display: none
+        }
         &-framework{
             @include flex-center;
             flex-direction: column;
@@ -115,6 +124,9 @@
                     font-size: 0.4em;
                 }
             }
+            &-illustration{
+                display: none
+            }
         }
     }
 
@@ -126,6 +138,32 @@
             color: $color-black;
             font-size: 1.25em;
             margin-top: 30px;
+        }
+    }
+}
+
+// Illustrations
+
+@media screen and (min-width: 1300px){
+    .card-framework-illustration{
+        @include flex-center;
+        background-color: $color-broken-white;
+        height: 600px;
+        width: 600px;
+        img{
+            width: 500px;
+            animation: floating 5s ease-in-out infinite both;
+        }
+    }
+
+    .card-illustration{
+        @include flex-center;
+        background-color: $color-broken-white;
+        height: 500px;
+        width: 700px;
+        img{
+            width: 400px;
+            animation: floating 5s ease-in-out infinite both;
         }
     }
 }
