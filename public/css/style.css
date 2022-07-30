@@ -1,5 +1,33 @@
-/* Utils */
+/* Base */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.dark-mode {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  filter: brightness(1);
+}
+
+/* Typography */
+@font-face {
+  font-family: "GT-Super";
+  src: url(/public/fonts/GT-Super-Display-Super.woff2);
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: "GT-Super", sans-serif;
+}
+
+p, a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+/* Keyframes */
 @keyframes slideUp {
   0% {
     transform: translateY(100%);
@@ -8,7 +36,7 @@
     transform: translateY(0%);
   }
 }
-/* Layout */
+/* Footer */
 footer {
   display: flex;
   justify-content: center;
@@ -17,6 +45,7 @@ footer {
   font-weight: 400;
 }
 
+/* Header */
 @media screen and (min-width: 768px) {
   .menu {
     display: flex;
@@ -144,35 +173,7 @@ footer {
     transition: all 0.5s ease-out 0s;
   }
 }
-/* Base */
-body {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-}
-
-.dark-mode {
-  background-color: rgb(51, 51, 51);
-  color: white;
-  filter: brightness(1);
-}
-
-@font-face {
-  font-family: "GT-Super";
-  src: url(/public/fonts/GT-Super-Display-Super.woff2);
-}
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  font-family: "GT-Super", sans-serif;
-}
-
-p, a {
-  font-family: "Roboto", sans-serif;
-  text-decoration: none;
-}
-
-/* Components */
-/* Pages */
+/* Index */
 @media screen and (min-width: 1000px) {
   .block__1 {
     display: flex;
@@ -333,6 +334,7 @@ p, a {
     margin-top: 30px;
   }
 }
+/* Portfolio */
 .portfolio {
   display: flex;
   justify-content: center;
