@@ -3,13 +3,14 @@
     flex-direction: row;
     height: 85vh;
     &-link{
+        height: 400px;
         @include flex-center;
         color: black;
         flex-direction: column;
         margin: 5px;
         &-title{
             @include flex-center;
-            height: 250px;
+            height: 100px;
             width: 50px;
             font-size: 1.5rem;
             margin-top: 0px;
@@ -37,7 +38,7 @@
                 border-radius: 50%;
                 height: 45px;
                 width: 45px;
-                transform: translateY(-55px);
+                transform: translateY(20px);
             }
         }
 

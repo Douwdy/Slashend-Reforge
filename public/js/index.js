@@ -20,6 +20,8 @@
     const nodeIcon = document.getElementById('node-icon');
     const sass = document.getElementById('sass');
     const sassIcon = document.getElementById('sass-icon');
+    const personality = document.getElementById('personality');
+    const personalityIcon = document.getElementById('personality-icon');
 
     // Functions for each title
     document.addEventListener('scroll', () => {
@@ -43,6 +45,14 @@
         const titleBounds = sass.getBoundingClientRect().y;
         if (titleBounds < clientHeight) {
             sass.style.animation = 'slideUp 1s forwards cubic-bezier(0.87, 0, 0.13, 1)';
+        }
+    });
+    
+    document.addEventListener('scroll', () => {
+        const clientHeight = document.documentElement.clientHeight;
+        const titleBounds = personality.getBoundingClientRect().y;
+        if (titleBounds < clientHeight) {
+            personality.style.animation = 'slideUp 1s forwards cubic-bezier(0.87, 0, 0.13, 1)';
         }
     });
 
@@ -71,5 +81,14 @@
         if (iconBounds < clientHeight) {
             sassIcon.style.transition = 'color 1s ease-in-out';
             sassIcon.style.color = '#C26090';
+        }
+    });
+
+    document.addEventListener('scroll', () => {
+        const clientHeight = document.documentElement.clientHeight;
+        const iconBounds = personalityIcon.getBoundingClientRect().y;
+        if (iconBounds < clientHeight) {
+            personalityIcon.style.transition = 'color 1s ease-in-out';
+            personalityIcon.style.color = '#7699d4';
         }
     });
