@@ -52,6 +52,17 @@
         }
     }
 
+    .arrow{
+        position: absolute;
+        @include flex-center;
+        height: 64px;
+        width: 64px;
+        bottom: 5px;
+        font-size: 4em;
+        animation: floating 5s infinite;
+        color: black;
+    }
+    
     .card{
         @include flex-center;
         flex-direction: column;
@@ -127,7 +138,10 @@
 @media screen and (max-width: 1000px) {
     .block{
         &__0{
-            display: none;
+            @include flex-center;
+            flex-direction: column;
+            height: 95vh;
+            border-bottom: solid 3px $color-darkmode;
         }
         &__1{
             @include flex-center;
@@ -147,12 +161,49 @@
         }
     }
 
+    .welcome{
+        @include flex-center;
+        flex-direction: column;
+        font-size: 1.2em;
+        color: black;
+        &-container{
+            @include flex-center;
+            height: 4.125rem;
+            line-height: 4rem;
+            width: 100%;
+            position: relative;
+            overflow: hidden; 
+
+            color: #1D3557;
+            &__roll{ 
+                @include flex-center;
+                text-align: center;
+                top: 0;
+                display: block;
+                margin: 0;
+                position: absolute;
+                animation: slide 5s infinite;  
+            }
+        }
+    }
+
+    .arrow{
+        position: absolute;
+        @include flex-center;
+        height: 64px;
+        width: 64px;
+        bottom: 5px;
+        font-size: 4em;
+        animation: floating 5s infinite;
+        color: black;
+    }
+
     .card{
         @include flex-center;
         flex-direction: column;
         background-color: $color-black;
         height: 500px;
-        width: 100vw;
+        width: 100%;
         img{
             border-radius: 5px;
             width: 300px;
@@ -171,7 +222,7 @@
             background-color: $color-black;
             color: $color-white;
             height: 150px;
-            width: 100vw;
+            width: 100%;
             font-size: 5em;
             &-title{
                 height: 0.4em;
