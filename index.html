@@ -13,16 +13,27 @@
     <title>SlashEnd - Accueil</title>
 </head>
 <header class="menu">
-  <div class="menu-logo">
-    <img class="menu-logo__img" src="./public/img/Slashend-logo.svg" alt="Logo SlashEnd">
-  </div>
-  <a href="javascript:void(0);" class="menu-icon" onclick="burgerMenu()">
-    <i class="fa fa-bars"></i>
+  <a href="index.html">
+    <div class="menu-logo">
+      <img class="menu-logo__img" src="./public/img/Slashend-logo.svg" alt="Logo SlashEnd">
+    </div>
+    <a href="javascript:void(0);" class="menu-icon" onclick="burgerMenu()">
+      <i class="fa fa-bars"></i>
+    </a>
   </a>
   <div class="menu-nav inactive" id="myLinks">
-    <a href="index.html" title="Vers l'Accueil">Accueil</a>
-    <a href="portfolio.html" title="Vers le Portfolio">Portfolio</a>
-    <a href="mailto:guillaumelamarque7@gmail.com" title="Envoyer un mail à guillaumelamarque7@gmail.com">Contact</a>
+    <div class="menu-nav-align">
+      <a class="menu-nav-button" href="index.html" title="Vers l'Accueil">Accueil</a>
+      <div class="menu-nav-button__shadow"></div>
+    </div>
+    <div class="menu-nav-align">
+      <a class="menu-nav-button" href="portfolio.html" title="Vers le Portfolio">Portfolio</a>
+      <div class="menu-nav-button__shadow"></div>
+    </div>
+    <div class="menu-nav-align">
+      <a class="menu-nav-button" href="mailto:guillaumelamarque7@gmail.com" title="Envoyer un mail à guillaumelamarque7@gmail.com">Contact</a>
+      <div class="menu-nav-button__shadow"></div>
+    </div>
   </div>
   <div class="menu-links">
     <a href="https://twitter.com/DouwdSlash" aria-label="Lien vers le Twitter de Guillaume" title="Lien vers le Twitter de Guillaume">

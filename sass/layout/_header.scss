@@ -5,36 +5,53 @@
         background-color: $color-white;
         border-bottom: 3px solid $color-darkmode;
         height: 80px;
-        &-icon{
-            display: none
-        }
-        &-logo{
-            @include flex-center;
-            flex-direction: row;
-            &__img{
-                filter: brightness(0);
-                width: 60px;
-                height: 60px;
-                margin: 10px;
+            &-icon{
+                display: none
             }
-        }
+            &-logo{
+                @include flex-center;
+                flex-direction: row;
+                &__img{
+                    filter: brightness(0);
+                    width: 60px;
+                    height: 60px;
+                    margin: 10px;
+                    &:hover{
+                        transition: transform 0.8s ease-in-out;
+                        transform: rotate(360deg);
+                    }
+                }
+            }
         &-nav{
             width: 500px;
             @include flex-around;
-            a{
+            &-align{
                 @include flex-center;
+                
+            }
+            &-button{
+                @include flex-center;
+                position: absolute;
                 font-weight: 800;
-                padding: 5px;
+                height: 30px;
                 color: $color-black;
-                border-bottom: 3px solid rgba($color: $color-black, $alpha: 0);
+                background: white;
+                border: 3px solid black;
+                border-radius: 50px;
                 width: 100px;
+                transition: transform 0.4s ease;
                 &:visited{
                     color: $color-black;
                 }
                 &:hover{
-                    transition: all 0.3s ease-in-out;
-                    border-bottom: 3px solid $color-black;
-                    border-radius: 5px;
+                    background: #71f79f;
+                    transform: translateX(3px) translateY(-3px);
+                }
+                &__shadow{
+                    border-radius: 105px;
+                    height: 35px;
+                    width: 105px;
+                    background: black;
                 }
             }
         }
@@ -45,7 +62,6 @@
             i{
                 color: $color-black;
                 font-size: 2.5em;
-                transition: color 0.3s cubic-bezier(.69,.1,.43,.71);
                 &:hover{
                     transition: cubic-bezier(.69,.1,.43,.71) 0.3s;
                     color: $color-social-hover;

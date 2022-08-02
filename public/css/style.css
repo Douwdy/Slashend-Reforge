@@ -84,29 +84,47 @@ footer {
     height: 60px;
     margin: 10px;
   }
+  .menu-logo__img:hover {
+    transition: transform 0.8s ease-in-out;
+    transform: rotate(360deg);
+  }
   .menu-nav {
     width: 500px;
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
-  .menu-nav a {
+  .menu-nav-align {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .menu-nav-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
     font-weight: 800;
-    padding: 5px;
+    height: 30px;
     color: #000000;
-    border-bottom: 3px solid rgba(0, 0, 0, 0);
+    background: white;
+    border: 3px solid black;
+    border-radius: 50px;
     width: 100px;
+    transition: transform 0.4s ease;
   }
-  .menu-nav a:visited {
+  .menu-nav-button:visited {
     color: #000000;
   }
-  .menu-nav a:hover {
-    transition: all 0.3s ease-in-out;
-    border-bottom: 3px solid #000000;
-    border-radius: 5px;
+  .menu-nav-button:hover {
+    background: #71f79f;
+    transform: translateX(3px) translateY(-3px);
+  }
+  .menu-nav-button__shadow {
+    border-radius: 105px;
+    height: 35px;
+    width: 105px;
+    background: black;
   }
   .menu-links {
     margin: 10px;
@@ -118,7 +136,6 @@ footer {
   .menu-links i {
     color: #000000;
     font-size: 2.5em;
-    transition: color 0.3s cubic-bezier(0.69, 0.1, 0.43, 0.71);
   }
   .menu-links i:hover {
     transition: cubic-bezier(0.69, 0.1, 0.43, 0.71) 0.3s;
