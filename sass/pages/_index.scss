@@ -164,7 +164,7 @@
     .welcome{
         @include flex-center;
         flex-direction: column;
-        font-size: 1.2em;
+        font-size: 1em;
         color: black;
         &-container{
             @include flex-center;
