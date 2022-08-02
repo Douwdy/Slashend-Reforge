@@ -21,3 +21,18 @@
     filter: drop-shadow( 0px 10px 5px rgba(0, 0, 0, 0.1));
   }
 }
+
+@keyframes slide {
+  0%{
+    top:0;
+  }
+  25%{
+    top: -4rem;    
+  }
+  50%{
+    top: -8rem;
+  }
+  72.5%{
+    top: -12.25rem;
+  }
+}

@@ -1,6 +1,12 @@
 // Desktop
 @media screen and (min-width: 1000px) {
     .block{
+        &__0{
+            @include flex-center;
+            flex-direction: column;
+            height: 95vh;
+            border-bottom: solid 3px $color-darkmode;
+        }
         &__1{
             @include flex-between;
             flex-direction: row;
@@ -18,7 +24,34 @@
             @include box-index;
         }
     }
-    
+
+    .welcome{
+        @include flex-center;
+        flex-direction: column;
+        font-size: 2em;
+        color: black;
+        &-container{
+            height: 4.125rem;
+            line-height: 4rem;
+            position: relative;
+            overflow: hidden; 
+            width: 100%;
+            @include flex-center;
+            
+            color: #1D3557;
+            &__roll{ 
+                @include flex-center;
+                text-align: center;
+                top: 0;
+                list-style: none;
+                display: block;
+                margin: 0;
+                position: absolute;
+                animation: slide 5s infinite;  
+            }
+        }
+    }
+
     .card{
         @include flex-center;
         flex-direction: column;
@@ -93,6 +126,9 @@
 // Mobile
 @media screen and (max-width: 1000px) {
     .block{
+        &__0{
+            display: none;
+        }
         &__1{
             @include flex-center;
             flex-direction: column;

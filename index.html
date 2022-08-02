@@ -4,71 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="./public/css/style.css"> -->
-    <link rel="stylesheet" href="./public/css/prefixed/style.min.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <!-- <link rel="stylesheet" href="./public/css/prefixed/style.min.css"> -->
     <link rel="stylesheet" href="./public/css/locomotive-scroll.css">
     <link rel="icon" href="public/img/favicon.webp"/>
     <script src="https://kit.fontawesome.com/0aa7525883.js" crossorigin="anonymous" defer></script>
     <script src="./public/js/index.js" defer></script>
     <title>SlashEnd - Accueil</title>
 </head>
-<header class="menu">
-  <a href="index.html">
-    <div class="menu-logo">
-      <img class="menu-logo__img" src="./public/img/Slashend-logo.svg" alt="Logo SlashEnd">
-    </div>
+<body>
+  <header class="menu">
+    <a href="index.html">
+      <div class="menu-logo">
+        <img class="menu-logo__img" src="./public/img/Slashend-logo.svg" alt="Logo SlashEnd">
+      </div>
+    </a>
     <a href="javascript:void(0);" class="menu-icon" onclick="burgerMenu()">
       <i class="fa fa-bars"></i>
     </a>
-  </a>
-  <div class="menu-nav inactive" id="myLinks">
-    <div class="menu-nav-align">
-      <a class="menu-nav-button" href="index.html" title="Vers l'Accueil">Accueil</a>
-      <div class="menu-nav-button__shadow"></div>
+    <div class="menu-nav inactive" id="myLinks">
+      <div class="menu-nav-div">
+        <a class="menu-nav-button" href="index.html" title="Vers l'Accueil">Accueil</a>
+        <div class="menu-nav-button__shadow"></div>
+      </div>
+      <div class="menu-nav-div">
+        <a class="menu-nav-button" href="portfolio.html" title="Vers le Portfolio">Portfolio</a>
+        <div class="menu-nav-button__shadow"></div>
+      </div>
+      <div class="menu-nav-div">
+        <a class="menu-nav-button" href="mailto:guillaumelamarque7@gmail.com" title="Envoyer un mail à guillaumelamarque7@gmail.com">Contact</a>
+        <div class="menu-nav-button__shadow"></div>
+      </div>
     </div>
-    <div class="menu-nav-align">
-      <a class="menu-nav-button" href="portfolio.html" title="Vers le Portfolio">Portfolio</a>
-      <div class="menu-nav-button__shadow"></div>
+    <div class="menu-links">
+      <a href="https://twitter.com/DouwdSlash" aria-label="Lien vers le Twitter de Guillaume" title="Lien vers le Twitter de Guillaume">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/guillaume-lamarque-00a888231/" aria-label="Lien vers le LinkedIn de Guillaume" title="Lien vers le LinkedIn de Guillaume">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/Douwdy" aria-label="Lien vers le GitHub de Guillaume" title="Lien vers le GitHub de Guillaume">
+        <i class="fa-brands fa-github"></i>
+      </a>
     </div>
-    <div class="menu-nav-align">
-      <a class="menu-nav-button" href="mailto:guillaumelamarque7@gmail.com" title="Envoyer un mail à guillaumelamarque7@gmail.com">Contact</a>
-      <div class="menu-nav-button__shadow"></div>
+  </header>
+  <div class="block">
+    <div class="block__0">
+      <div class="welcome">
+        <h1>Bienvenue sur Slashend</h1>
+        <div class="welcome-container">
+          <div class="welcome-container__roll">
+            <h2>🛠️</h2>
+            <h2>🤔</h2>
+            <h2>✏️</h2>
+            <h2>💾</h2>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="menu-links">
-    <a href="https://twitter.com/DouwdSlash" aria-label="Lien vers le Twitter de Guillaume" title="Lien vers le Twitter de Guillaume">
-      <i class="fa-brands fa-twitter"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/guillaume-lamarque-00a888231/" aria-label="Lien vers le LinkedIn de Guillaume" title="Lien vers le LinkedIn de Guillaume">
-      <i class="fa-brands fa-linkedin"></i>
-    </a>
-    <a href="https://github.com/Douwdy" aria-label="Lien vers le GitHub de Guillaume" title="Lien vers le GitHub de Guillaume">
-      <i class="fa-brands fa-github"></i>
-    </a>
-  </div>
-</header>
-<body>
-  <align class="block">
-    <align class="block__1">
+    <div class="block__1">
       <div class="card">
         <img src="./public/img/pfp-fullsize.png" alt="Photo de Guillaume">
         <h1>Guillaume Lamarque</h1>
       </div>
       <div class="about">
         <p class="about-text">
+          Bonjour à vous !
+          <br>
           Je suis actuellement en formation de développement web
           chez OpenClassrooms, cependant je code depuis l'âge de 15 ans.
-          <br> J'ai débuté avec le Java sur Eclipse, puis je me suis intéressé au web 
+          <br>
+          J'ai débuté avec le Java sur Eclipse, puis je me suis intéressé au web 
           par le biais d'un ami, et grâce à ça je me suis initié à l'HTML et au CSS.
           c'est pour cela que je me suis lancé dans cette formation,
-          <br> pour me professionnaliser dans un domaine qui me passionne depuis l'adolescence !
+          <br>
+          pour me professionnaliser dans un domaine qui me passionne depuis l'adolescence !
         </p>
       </div>
       <div class="card-illustration">
         <img src="./public/img/illustrations/progress.webp" alt="Illustration de la progression">
       </div>
-    </align>
-    <align class="block__2">
+    </div>
+    <div class="block__2">
       <div class="card-framework-illustration">
         <img src="./public/img/illustrations/work.webp" alt="Illustration du travail">
       </div>
@@ -84,8 +101,8 @@
           <h2 class="card-framework-title__text" id="react">React</h2>
         </div>
       </div>
-    </align>
-    <align class="block__3">
+    </div>
+    <div class="block__3">
       <div class="card-framework">
         <i class="fa-brands fa-node-js" id="node-icon"></i>
         <div class="card-framework-title">
@@ -101,8 +118,8 @@
       <div class="card-framework-illustration">
         <img src="./public/img/illustrations/backend.webp" alt="Illustration du travail">
       </div>
-    </align>
-    <align class="block__4">
+    </div>
+    <div class="block__4">
       <div class="card-framework-illustration">
         <img src="./public/img/illustrations/design.webp" alt="Illustration du travail">
       </div>
@@ -119,8 +136,8 @@
           <h2 class="card-framework-title__text text-transform" id="sass">Sass</h2>
         </div>
       </div>
-    </align>
-    <align class="block__5">
+    </div>
+    <div class="block__5">
       <div class="card-framework">
         <i class="fa-solid fa-pencil" id="personality-icon"></i>
         <div class="card-framework-title">
@@ -149,12 +166,12 @@
       <div class="card-framework-illustration">
         <img src="./public/img/illustrations/personality.webp" alt="Illustration du travail">
       </div>
-    </align>
-  </align>
+    </div>
+  </div>
+  <footer>
+    <p>
+      Copyright 2022 SlashEnd - All rights reserved
+    </p>
+  </footer>
 </body>
-<footer>
-  <p>
-    Copyright 2022 SlashEnd - All rights reserved
-  </p>
-</footer>
 </html>
