@@ -28,7 +28,7 @@
     .welcome{
         @include flex-center;
         flex-direction: column;
-        font-size: 2em;
+        font-size: 1.5em;
         color: black;
         &-container{
             height: 4.125rem;
