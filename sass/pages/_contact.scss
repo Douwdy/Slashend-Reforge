@@ -1,0 +1,44 @@
+// Desktop
+@media screen and (min-width: 1000px) {
+    .contact{
+        @include flex-center;
+        &-box{
+            @include flex-center;
+            margin: 15vh;
+            background-color: $color-black;
+            height: 500px;
+            width: 500px;
+            &-title{
+                color: $color-white;
+                font-size: 1em;
+                margin-top: 15px;
+            }
+            &-link{
+                color: $color-white;
+                font-size: 1.2em;
+            }
+        }
+    }
+}
+
+// Mobile
+@media screen and (max-width: 1000px) {
+    .contact{
+        @include flex-center;
+        &-box{
+            @include flex-center;
+            background-color: $color-black;
+            height: 500px;
+            width: 500px;
+            &-title{
+                color: $color-white;
+                font-size: 1em;
+                margin-top: 15px;
+            }
+            &-link{
+                color: $color-white;
+                font-size: 1.2em;
+            }
+        }
+    }
+}

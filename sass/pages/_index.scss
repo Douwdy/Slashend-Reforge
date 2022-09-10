@@ -5,7 +5,6 @@
             @include flex-center;
             flex-direction: column;
             height: 95vh;
-            border-bottom: solid 3px $color-darkmode;
         }
         &__1{
             @include flex-between;
@@ -120,12 +119,11 @@
             &-box{
                 margin: 10px;
                 @include flex-center;
-                background-color: $color-broken-white;
+                background-color: $color-white;
                 border-radius: 40px;
                 font-size: 1.2em;
                 height: 40px;
                 width: 300px;
-                border: 3px solid rgba($color: $color-black, $alpha: 0.1);
             }
         }
     }
@@ -138,7 +136,6 @@
             @include flex-center;
             flex-direction: column;
             height: 95vh;
-            border-bottom: solid 3px $color-darkmode;
         }
         &__1{
             @include flex-center;
@@ -255,12 +252,11 @@
             &-box{
                 margin: 8px;
                 @include flex-center;
-                background-color: $color-broken-white;
+                background-color: $color-white;
                 border-radius: 40px;
                 font-size: 1.2em;
                 height: 40px;
                 width: 300px;
-                border: 3px solid rgba($color: $color-black, $alpha: 0.1);
             }
         }
     }
@@ -271,7 +267,7 @@
 @media screen and (min-width: 1300px){
     .card-framework-illustration{
         @include flex-center;
-        background-color: $color-broken-white;
+        background-color: $color-white;
         height: 600px;
         width: 600px;
         img{
@@ -282,7 +278,7 @@
 
     .card-illustration{
         @include flex-center;
-        background-color: $color-broken-white;
+        background-color: $color-white;
         height: 500px;
         width: 700px;
         img{
