@@ -711,6 +711,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  height: 85vh;
 }
 .github-container {
   display: flex;
