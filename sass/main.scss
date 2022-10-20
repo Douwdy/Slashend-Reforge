@@ -1,19 +1,15 @@
-@import "./utils/variable";
-@import "./utils/mixins";
-
 /* Base */
 @import "./base/base";
-/* Typography */
 @import "./base/typography";
-/* Keyframes */
+/* Utils */
 @import "./utils/keyframes";
-/* Footer */
+@import "./utils/variable";
+@import "./utils/mixins";
+/* Layout */
 @import "./layout/footer";
-/* Header */
 @import "./layout/header";
-/* Index */
+/* Pages */
 @import "./pages/index";
-/* Portfolio */
 @import "./pages/portfolio";
-/* Contact */
 @import "./pages/contact";
+@import "./pages/github";

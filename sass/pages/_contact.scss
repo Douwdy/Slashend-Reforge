@@ -25,6 +25,7 @@
 @media screen and (max-width: 1000px) {
     .contact{
         @include flex-center;
+        height: 85vh;
         &-box{
             @include flex-center;
             background-color: $color-black;

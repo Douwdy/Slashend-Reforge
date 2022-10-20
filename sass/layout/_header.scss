@@ -90,6 +90,7 @@
             background-color: $color-broken-white;
             position: absolute;
             flex-direction: row;
+            z-index: 1;
             a{
                 @include flex-center;
                 font-weight: 800;
